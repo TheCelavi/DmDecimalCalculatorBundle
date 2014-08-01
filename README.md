@@ -11,6 +11,6 @@ Bundle provides you with:
 - Service, for calculations on controller/service level
 - Twig extension, for calculations within the templates
  
- For more information about this bundle, see Resources/doc directory.
- 
- This bundle is licensed under MIT licence, courtesy of Nikola Svitlica, a.k.a TheCelavi
+For more information about this bundle, see Resources/doc directory.
+
+This bundle is licensed under MIT licence, courtesy of Nikola Svitlica, a.k.a TheCelavi

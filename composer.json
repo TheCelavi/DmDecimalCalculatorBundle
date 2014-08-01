@@ -1,0 +1,24 @@
+{
+    "name": "dm/decimal-calculator-bundle",
+    "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+    "keywords": ["decimal", "math", "double", "finance"],
+    "homepage": "TODO",
+    "type": "symfony-bundle",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nikola Svitlica a.k.a TheCelavi",
+            "email": "thecelavi@gmail.com",
+            "homepage": "http://thecelavi.wordpress.com"
+        }
+    ],
+    "require": {
+        "zdenekdrahos/bn-php": "*",
+        "symfony/symfony": ">= 2.2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Dm\\DecimalCalculator\\": "src/Dm/DecimalCalculator/"
+        }
+    }
+}

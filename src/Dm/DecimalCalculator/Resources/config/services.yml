@@ -1,0 +1,25 @@
+parameters:
+
+    dm.decimal_calculator.class:                                        Dm\DecimalCalculator\Calculator\Calculator
+
+    dm.decimal_calculator.implementation.zdenekdrahos_bn_php.class:     Dm\DecimalCalculator\Calculator\BnPhp\BnPhpCalculator
+
+    dm.decimal_calculator.twig.extension.class:                         Dm\DecimalCalculator\Twig\DecimalCalculatorExtension
+
+services:
+
+    dm.decimal_calculator:
+        class: %dm.decimal_calculator.class%
+        arguments: []
+
+    dm.decimal_calculator.implementation.zdenekdrahos_bn_php:
+        class: %dm.decimal_calculator.implementation.zdenekdrahos_bn_php.class%
+        public: false
+        arguments: []
+
+
+    dm.decimal_calculator.twig.extension:
+        class:                  %dm.decimal_calculator.twig.extension.class%
+        arguments:              [@dm.decimal_calculator, []]
+        tags:
+            - { name: twig.extension }

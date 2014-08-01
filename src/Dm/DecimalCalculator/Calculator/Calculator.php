@@ -53,6 +53,10 @@ class Calculator implements DecimalCalculatorInterface {
             throw new \InvalidArgumentException(sprintf('Rounding scale %s can not be greater than operational scale %s.', $roundingScale, $operationalScale));
         }
 
+        if (is_null($roundingScale) && is_null($this->getRound())) {
+            $roundingScale = $operationalScale;
+        }
+
         return $this->calculator->evaluate($expression, $vars, $operationalScale, $roundingScale);
     }
 

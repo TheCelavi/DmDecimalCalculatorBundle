@@ -1,8 +1,7 @@
 {
     "name": "dm/decimal-calculator-bundle",
-    "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+    "description": "Provides a DI service and Twig tag/filter for decimal calculations with arbitrary precision.",
     "keywords": ["decimal", "math", "double", "finance"],
-    "homepage": "TODO",
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [

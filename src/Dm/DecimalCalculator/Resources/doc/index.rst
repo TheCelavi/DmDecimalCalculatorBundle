@@ -6,8 +6,8 @@ mathematical calculations with arbitrary precision in PHP.*
 
 PHP uses floating point precision for expressing the numbers and
 executing mathematical operations against numbers. Floating point
-numbers are aproximation of the number, which can not be used every
-time, especialy when it comes to operations within the context of
+numbers are approximation of the number, which can not be used every
+time, especially when it comes to operations within the context of
 financial calculations. To find out more about this issue, see:
 http://php.net/manual/en/language.types.float.php
 
@@ -43,13 +43,13 @@ provided and implemented for mathematical operations (see more in
 
 ``scale`` defines the operational precision scale which ought to be used
 (that is, how many decimal points to use in mathematical operations with
-the numbers). Higer scale will decrease of risk of accumulating rounding
+the numbers). Higher scale will decrease of risk of accumulating rounding
 errors in successive mathematical operations, while on the other hand it
 will increase processor and memory consumption. ``round`` defines the
 number of decimal points for final result, by default the same number of
 decimal points is used as defined in ``scale``.
 
-Section contstants defines most common mathematical constants that can
+Section constants defines most common mathematical constants that can
 be used (PI, e). Please note that numbers are, and must be, provided as
 a string.
 

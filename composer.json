@@ -13,7 +13,7 @@
     ],
     "require": {
         "zdenekdrahos/bn-php": "*",
-        "symfony/symfony": ">= 2.2.0"
+        "symfony/framework-bundle": ">=2.0"
     },
     "autoload": {
         "psr-4": {
